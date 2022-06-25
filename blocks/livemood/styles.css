@@ -1,0 +1,142 @@
+.block_livemood .adminbut {
+    outline: none;
+    height: auto;
+    width: auto;
+    font-family: "Nimbus Sans L", "URW Gothic L", Arial, Tahoma, Helvetica, "Lucida Grande", Geneva, "DejaVu Sans", "Microsoft Sans Serif", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fafafa;
+    cursor: pointer;
+    border-bottom: 1.3px solid #a2682f;
+    border-right: 1.3px solid #a26334;
+    border-top: 1.3px;
+    border-left: 1.3px;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #ceb497, #b06c34);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .adminbut: hover {
+    outline: none;
+    height: auto;
+    width: auto;
+    font-family: "Nimbus Sans L", "URW Gothic L", Arial, Tahoma, Helvetica, "Lucida Grande", Geneva, "DejaVu Sans", "Microsoft Sans Serif", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fafafa;
+    cursor: pointer;
+    border-bottom: 1.3px solid #a2682f;
+    border-right: 1.3px solid #a26334;
+    border-top: 1.3px;
+    border-left: 1.3px;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #ceb497, #b06c34);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .adminbut: active {
+    outline: none;
+    color: #d2d2d2;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #8d562a, #774923);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .teacbut {
+    outline: none;
+    height: auto;
+    width: auto;
+    font-family: "Nimbus Sans L", "URW Gothic L", Arial, Tahoma, Helvetica, "Lucida Grande", Geneva, "DejaVu Sans", "Microsoft Sans Serif", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fafafa;
+    cursor: pointer;
+    border-bottom: 1.3px solid #347ca2;
+    border-right: 1.3px solid #347ca2;
+    border-top: 1.3px;
+    border-left: 1.3px;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #99bbce, #3986b0);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .teacbut: hover {
+    outline: none;
+    height: auto;
+    width: auto;
+    font-family: "Nimbus Sans L", "URW Gothic L", Arial, Tahoma, Helvetica, "Lucida Grande", Geneva, "DejaVu Sans", "Microsoft Sans Serif", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fafafa;
+    cursor: pointer;
+    border-bottom: 1.3px solid #347ca2;
+    border-right: 1.3px solid #347ca2;
+    border-top: 1.3px;
+    border-left: 1.3px;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #99bbce, #3986b0);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .teacbut: active {
+    color: #d2d2d2;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #3ab7b1, #2b6584);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .studbut {
+    outline: none;
+    height: auto;
+    width: auto;
+    font-family: "Nimbus Sans L", "URW Gothic L", Arial, Tahoma, Helvetica, "Lucida Grande", Geneva, "DejaVu Sans", "Microsoft Sans Serif", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fafafa;
+    cursor: pointer;
+    border-bottom: 1.3px solid #27792f;
+    border-right: 1.3px solid #236d2a;
+    border-top: 1.3px;
+    border-left: 1.3px;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #a0dd82, #5f9d3a);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .studbut: hover {
+    outline: none;
+    height: auto;
+    width: auto;
+    font-family: "Nimbus Sans L", "URW Gothic L", Arial, Tahoma, Helvetica, "Lucida Grande", Geneva, "DejaVu Sans", "Microsoft Sans Serif", sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fafafa;
+    cursor: pointer;
+    border-bottom: 1.3px solid #27792f;
+    border-right: 1.3px solid #236d2a;
+    border-top: 1.3px;
+    border-left: 1.3px;
+    padding: 6px;
+    margin: 3px;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #a0dd82, #5f9d3a);
+    white-space: normal;
+    word-break: normal;
+}
+.block_livemood .studbut: active {
+    color: #d2d2d2;
+    border-radius: 1em 1em 1em 1em;
+    background: linear-gradient(to bottom, #87bb6e, #74a05e);
+    white-space: normal;
+    word-break: normal;
+}

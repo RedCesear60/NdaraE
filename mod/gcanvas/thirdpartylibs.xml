@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<libraries>
+    <library>
+        <location>javascript/fabric.js</location>
+        <name>fabric.js</name>
+        <version>2.4.1</version>
+        <license>MIT</license>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>javascript/spectrum.js</location>
+        <name>spectrum.js</name>
+        <version>1.8.0</version>
+        <license>MIT</license>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>css/spectrum.css</location>
+        <name>spectrum.css</name>
+        <version>1.8.0</version>
+        <license>MIT</license>
+        <licenseversion></licenseversion>
+    </library>
+    <library>
+        <location>pix/emoji/</location>
+        <name>twitter/twemoji</name>
+        <version>11.2</version>
+        <license>Graphics licensed under CC-BY</license>
+        <licenseversion>4.0</licenseversion>
+    </library>
+</libraries>

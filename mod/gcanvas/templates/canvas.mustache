@@ -1,0 +1,126 @@
+{{!
+    This file is part of Moodle - http://moodle.org/
+
+    Moodle is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Moodle is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{!
+    @package moodle-mod_gcanvas
+    @copyright 9-10-2018 MFreak.nl
+    @author    Luuk Verhoeven
+}}
+{{!
+    @template mod_canvas/canvas
+
+    The main canvas html
+
+    Context variables required for this template:
+    * is_teacher - Check if the user is a teacher
+    * helptext - Help text
+
+    Example context (json):
+    {
+        "is_teacher": false,
+        "helptext": "Some text"
+    }
+}}
+<div style="clear:both"></div>
+<div id="sketch-tool-bg">
+    <div id="sketch-tool">
+        {{#is_teacher}}
+            <!-- Only visible if you have this capability -->
+            <div class="d-flex flex-row" id="teacher-toolbar">
+                <div class="p-2">
+                    {{# str}} teacher_tools, mod_gcanvas {{/ str}}
+                </div>
+                <div class="p-2">
+                    <span id="change_background">{{# str}} btn:background, mod_gcanvas {{/ str}}</span>
+                    <span id="add_toolbar_images">{{# str}} btn:toolbar_images, mod_gcanvas {{/ str}}</span>
+                    <a href="{{linkintro}}">{{# str}} btn:intro, mod_gcanvas {{/ str}}</a>
+                </div>
+            </div>
+        {{/is_teacher}}
+        <div class="d-flex flex-row" id="canvas-wrapper">
+            <!-- Left toolbar -->
+            <div class="p-2" id="toolbar">
+                <div class="item icon" data-element-type="Textbox" title="{{# str}} btn:text, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-font"></i>
+                </div>
+                <div class="item icon" data-element-type="Circle" title="{{# str}} btn:circle, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-circle"></i>
+                </div>
+                <div class="item icon" data-element-type="Rect" title="{{# str}} btn:rect, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-square"></i>
+                </div>
+                <div class="item icon" data-element-type="Triangle" title="{{# str}} btn:triangle, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-caret-up"></i>
+                </div>
+                <div class="item icon" id="arrow" title="{{# str}} btn:arrow, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-caret-left"></i>
+                </div>
+                <div class="item icon" id="add-image" title="{{# str}} btn:image, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                </div>
+                <div class="item icon" id="select-a-image" title="{{# str}} btn:select_a_image, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-image" aria-hidden="true"></i>
+                    <div id="image-picker"></div>
+                </div>
+                <div class="item icon" id="undo" title="{{# str}} btn:undo, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-undo" aria-hidden="true"></i>
+                </div>
+                <div class="item icon" id="smiley" title="{{# str}} btn:smiley, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-smile-o" aria-hidden="true"></i>
+                    <div id="emoji-picker"></div>
+                </div>
+                <div class="item icon" id="trash" title="{{# str}} btn:trash, mod_gcanvas {{/ str}}">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </div>
+                <div class="item icon" title="{{# str}} btn:colorpicker, mod_gcanvas {{/ str}}">
+                    <input id="colorpicker" type="hidden"/>
+                </div>
+            </div>
+            <div class="p-0">
+                <!-- The canvas needed for drawing -->
+                <canvas id="sketch" height="500"></canvas>
+            </div>
+        </div>
+            <!-- Bottom toolbar -->
+        <div class="d-flex justify-content-between" id="bottom-toolbar">
+            <div class="p-2">
+                <span id="save-canvas">
+                    <i class="fa fa-save" aria-hidden="true"></i>
+                    {{# str}} btn:save, mod_gcanvas {{/ str}}
+                </span>
+            </div>
+            <div class="p-2">
+                 <span id="show-help">
+                    <i class="fa fa-question" aria-hidden="true"></i>
+                     {{# str}} btn:help, mod_gcanvas {{/ str}}
+                </span>
+            </div>
+            <div class="p-2">
+                  <span id="clear">
+                    <i class="fa fa-remove" aria-hidden="true"></i>
+                      {{# str}} btn:clear, mod_gcanvas {{/ str}}
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="d-flex flex-row" id="history">
+    <!-- Will be loaded with a AJAX call -->
+</div>
+<div id="dialog-help" class="dialog">
+    <div class="close"><i class="fa fa-close" aria-hidden="true"></i></div>
+    <div class="help-content">{{{helptext}}}</div>
+</div>
